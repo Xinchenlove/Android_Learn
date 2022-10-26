@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    tools:context=".UT"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/Textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:autoLink="phone"
+
+            android:background="#9cdaf100"
+            android:drawableLeft="@drawable/a0002"
+            android:drawableTop="@drawable/a0004"
+            android:drawableRight="@drawable/a0003"
+
+            android:drawableBottom="@drawable/a0001"
+            android:gravity="center"
+            android:shadowColor="#00d9ff"
+            android:shadowDx="10.0"
+            android:shadowDy="10.0"
+
+            android:shadowRadius="3.0"
+            android:text="111"
+            android:textColor="#ff0000"
+            android:textScaleX="2"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+
+        <EditText
+            android:id="@+id/EditText1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Textview1"
+            android:hint="呵呵"
+
+            android:textColorHint="#ff0000"
+            android:selectAllOnFocus="true"
+
+            />
+        <EditText
+            android:layout_alignLeft="@id/EditText1"
+            android:id="@+id/EditText2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EditText1"
+            android:hint="只可以输入一行"
+            android:textColorHint="#ff0000"
+            android:singleLine="true"
+
+            />
+
+        <EditText
+            android:layout_alignLeft="@id/EditText2"
+            android:id="@+id/EditText3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EditText2"
+            android:hint="只可以输入数字"
+            android:inputType="numberPassword"
+            android:textColorHint="#ff0000"
+
+            />
+
+        <ImageButton
+            android:background="@drawable/ic_launcher_background"
+            android:id="@+id/Bt2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/EditText4"
+            android:layout_marginRight="25dp"
+            android:layout_alignTop="@id/EditText4"
+            android:onClick="bt2"
+            />
+        <EditText
+            android:id="@+id/EditText4"
+            android:layout_width="200dp"
+            android:hint="I have delete"
+            android:textColorHint="#00ff00"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/EditText1"
+            android:layout_below="@id/EditText3"
+
+            />
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/EditText4"
+       android:layout_alignLeft="@id/EditText3"
+       android:id="@+id/TV1"
+       android:text="hello"
+       />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt1"
+            android:onClick="bt1"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/EditText1"
+            android:id="@+id/RLM">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Button01"
+                android:text="按钮中的图片"
+                android:layout_toRightOf="@id/Button01"
+                android:drawableLeft="@drawable/a0004"
+                android:onClick="add"
+                />
+            <ImageButton
+                android:id="@+id/imageButton01"
+                android:layout_toRightOf="@id/Button01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/a0004"
+                />
+            <Button
+                android:id="@+id/Button_One"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Button01"
+                android:text="Button_one"
+                android:background="#ff00ff"/>
+            <Button
+                android:id="@+id/Button_Two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Button_One"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@id/Button01"
+                android:text="Button_Two"
+                android:background="#4c6dff"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Button_Thire"
+                android:layout_toRightOf="@id/Button_Two"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@id/Button01"
+                android:background="#000000"
+                />
+
+        </RelativeLayout>
+        <!--ImageView-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/RLM">
+
+            <ImageView
+                android:id="@+id/ImageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/a0001"
+
+
+                />
+            <ImageView
+                android:id="@+id/ImageView2"
+                android:layout_toRightOf="@id/ImageView1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:background="@drawable/a0002"/>
+
+            <ImageView
+                android:id="@+id/ImageView3"
+                android:layout_below="@id/ImageView2"
+                android:layout_alignRight="@id/ImageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a0004"
+                />
+
+
+        </RelativeLayout>
+<!--单选按钮-->
+        <RelativeLayout
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Textview1">
+
+            <TextView
+                android:id="@+id/qsrxb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入性别"/>
+
+            <RadioGroup
+                android:id="@+id/Sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/qsrxb">
+
+                <RadioButton
+                    android:id="@+id/boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="boy"/>
+                <RadioButton
+                    android:layout_toRightOf="@id/boy"
+                    android:id="@+id/girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="girl"/>
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/Sex_OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Sex"
+                android:text="OK"
+                android:onClick="Sex_OK"
+                />
+
+            <ImageView
+                android:id="@+id/Lamp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/Sex_OK"
+                android:background="@drawable/lamp_off"
+                />
+
+
+
+        </RelativeLayout>
+
+<!--复选框-->
+        <RelativeLayout
+            android:id="@+id/Classes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Textview1"
+            android:layout_toRightOf="@id/radio">
+
+            <TextView
+                android:id="@+id/XHDKC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择你喜欢的课程"
+                android:layout_marginLeft="-50dp"
+                android:textSize="18dp"
+                />
+
+            <CheckBox
+                android:layout_below="@id/XHDKC"
+                android:id="@+id/Math"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Math"
+                />
+            <CheckBox
+                android:layout_below="@id/Math"
+                android:id="@+id/Chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Chinese"
+                />
+
+            <CheckBox
+                android:layout_below="@id/Chinese"
+                android:id="@+id/English"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="English"
+                />
+
+            <CheckBox
+                android:layout_below="@id/English"
+                android:id="@+id/IT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="IT"
+                />
+        <Button
+            android:id="@+id/course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_below="@id/IT"
+            />
+
+
+        </RelativeLayout>
+
+<!--开关-->
+        <RelativeLayout
+            android:id="@+id/Switch"
+            android:layout_below="@id/Textview1"
+            android:layout_toRightOf="@id/Classes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ToggleButton
+                android:id="@+id/ToggleBu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="开灯"
+                android:textOn="关灯"
+                android:disabledAlpha="0.5"
+
+                />
+            <Switch
+                android:id="@+id/SwitchT"
+                android:layout_below="@id/ToggleBu"
+                android:text="开关"
+                android:track="@drawable/a0001"
+                android:thumb="@drawable/a0004"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <!--进度条 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TV1"
+            android:layout_toRightOf="@id/Textview1">
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:id="@+id/ProgressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="30"
+                />
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Inverse"
+                android:id="@+id/ProgressBar2"
+                android:layout_below="@id/ProgressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="30"
+                />
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Large"
+                android:id="@+id/ProgressBar3"
+                android:layout_below="@id/ProgressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="30"
+                />
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Small"
+                android:id="@+id/ProgressBar4"
+                android:layout_toRightOf="@id/ProgressBar2"
+                android:layout_alignBottom="@id/ProgressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="30"
+                />
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Small.Inverse"
+                android:id="@+id/ProgressBar5"
+                android:layout_toRightOf="@id/ProgressBar2"
+                android:layout_alignBottom="@id/ProgressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="30"
+                />
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:id="@+id/ProgressBar6"
+                android:layout_toRightOf="@id/ProgressBar2"
+                android:layout_alignBottom="@id/ProgressBar3"
+                android:progress="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="30"
+                />
+
+
+            <ProgressBar
+                android:id="@+id/ProgressBar_L"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProgressBar3"
+                android:progress="0"
+                android:max="100"
+                />
+
+        </RelativeLayout>
+
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:id="@+id/ProgressBarFF"
+            android:max="100"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/radio"
+            />
+        <SeekBar
+            android:id="@+id/SeekBarFF"
+            android:layout_below="@id/ProgressBarFF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:progress="0"
+            android:max="100"
+            android:background="#00ff00"
+
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RatingBar
+                android:id="@+id/Start10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="10"
+                android:stepSize="0.01" />
+
+        <ScrollView
+            android:id="@+id/GDT"
+            android:layout_below="@id/Start10"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+            <TableLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="我是顶部"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="121212121212121212121212123"/>
+                <TextView android:textColor="#00ff00" android:textSize="18dp" android:text="我是底部"/>
+
+
+
+
+
+
+
+            </TableLayout>
+
+        </ScrollView>
+
+        <ToggleButton
+            android:id="@+id/DD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="去底部"
+            android:textOn="去顶部"
+            />
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <TextClock
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
