@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hello">
+
+
+
+    <TextClock
+        android:id="@+id/Tclock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="MM/dd/yy h:mmaa"
+        />
+
+    <TextClock
+        android:layout_below="@id/Tclock1"
+        android:id="@+id/Tclock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="MMMM dd, yyyy h:mmaa"
+        />
+    <AnalogClock
+        android:id="@+id/Aclack1"
+        android:layout_below="@id/Tclock2"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="#000000"
+        />
+    <Chronometer
+        android:id="@+id/chronometer"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Aclack1"
+        android:layout_marginLeft="18dp"
+        android:textSize="28dp"
+        />
+    <LinearLayout
+
+        android:id="@+id/Linear01"
+        android:layout_below="@id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Ch_Bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"/>
+
+
+        <Button
+            android:id="@+id/Ch_Bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"/>
+
+        <Button
+            android:id="@+id/Ch_Bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Linear01"
+        android:orientation="horizontal">
+
+
+
+        <DatePicker
+            android:id="@+id/DataPicker02"
+            android:datePickerMode="spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </DatePicker>
+
+        <TimePicker
+
+            android:id="@+id/TimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TimePicker>
+
+        <!--<CalendarView-->
+            <!--android:id="@+id/CalendarView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+        <!--</CalendarView>-->
+
+
+
+    </LinearLayout>
+
+
+
+<ListView
+    android:layout_below="@id/Linear01"
+    android:id="@+id/ListView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#2cf0ff0f">
+
+</ListView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
